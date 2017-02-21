@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>WebOffice App</title>
+        <link href="//cdn.bootcss.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="//cdn.bootcss.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" herf="/public/css/styles.css">
+    </head>
+    <body>
+        <div class="page-header">
+            <div class="container">
+                <div class="col-md-6">
+                    <h1><img src="/public/img/logo.png" style="width:45px; height:45px;">&nbsp;<a href="/">weboffice.org</a></h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    {{{body}}}
+                </div>
+                <div class="col-sm-4">
+                    {{>stats this}}
+                    {{>popular this}}
+                    {{>comments this}}
+                </div>
+            </div>
+        </div>
+        <div style="border-top:solid 1px #eee; padding-top: 1em;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <p class="text-muted">weboffice.org | &copy;Copyright 2017, All Rights Reserved</p>
+                        <p class="text-center">
+                            <i class="fa fa-twitter-square fa-2x text-primary"></i>
+                            <i class="fa fa-facebook-square fa-2x text-primary"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/public/js/scripts.js"></script>
+     </body>
+</html>
